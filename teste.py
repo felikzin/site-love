@@ -63,7 +63,7 @@ TEMPLATE = """
 
     <div class="message">
       <h1>Te amo para todo sempre!</h1>
-      <p>...</p>
+      <p>Deve ter alguma coisa para você no quarto...</p>
     </div>
   </main>
 </body>
@@ -85,3 +85,4 @@ if __name__ == '__main__':
         os.makedirs('static', exist_ok=True)
     print('Coloque a imagem que você enviou dentro da pasta ./static com o nome:', 'amorzão.jpeg')
     app.run(debug=True)
+
