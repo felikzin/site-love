@@ -81,7 +81,7 @@ TEMPLATE = """
 
 @app.route('/')
 def index():
-    filename = 'amorzão.jpeg'   # imagem na pasta static
+    filename = 'amorzao.jpeg'   # imagem na pasta static
     bg_url = url_for('static', filename=filename)
     img_url = url_for('static', filename=filename)
     return render_template_string(TEMPLATE, bg_url=bg_url, img_url=img_url)
@@ -91,4 +91,5 @@ if __name__ == '__main__':
         os.makedirs('static', exist_ok=True)
     print('Coloque a imagem em ./static com o nome amorzão.jpeg')
     app.run(debug=True)
+
 
