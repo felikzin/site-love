@@ -51,7 +51,6 @@ TEMPLATE = """
 
 <body>
 
-  <!-- Música em loop (agora no lugar certo!) -->
   <audio id="musicaFundo" autoplay loop>
       <source src="{{ url_for('static', filename='musica.mp3') }}" type="audio/mpeg">
   </audio>
@@ -92,3 +91,4 @@ if __name__ == '__main__':
         os.makedirs('static', exist_ok=True)
     print('Coloque a imagem em ./static com o nome amorzão.jpeg')
     app.run(debug=True)
+
